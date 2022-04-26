@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class ExceptionsExample {
 
-
     public static void main(String[] args) throws Throwable {
 //        simpleTryCatchExample();
 //        tryFinallyExample();
