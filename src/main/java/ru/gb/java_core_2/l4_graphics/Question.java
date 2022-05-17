@@ -11,6 +11,20 @@ public class Question {
     * и read(byte[] buffer) у FileInputStream) второй возвращает кол-во прочитанных байт, а вот что за инт возвращает первый?
      */
     public static void main(String[] args) {
+//        spend();
+        read();
+//        spend();
+    }
+
+    private static void spend() {
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static void read() {
         try (FileInputStream fis = new FileInputStream("some.txt")) {
 //            int x = 0;
 //            while (x >= 0) {
