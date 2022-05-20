@@ -1,5 +1,9 @@
 package ru.gb.java_core_2.l5_multithreading;
 
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+
 public class MultithreadingExample {
 
     private final static Object mon1 = new Object();
@@ -7,12 +11,14 @@ public class MultithreadingExample {
 
     private static int wordNum = 0;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        threadCreationExample();
 //        mainFinishedFirstExample();
 //        threadStopExample();
 //        raceConditionExample();
 //        stupidDeadLockExample();
+//        Desktop desktop = Desktop.getDesktop();
+//        desktop.browse(URI.create("https://yandex.ru"));
 
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
